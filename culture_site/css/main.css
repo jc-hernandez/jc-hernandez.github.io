@@ -15,11 +15,22 @@ img {
 
 header {
 	padding-top: 30px;
-	background-image: url(#);
+	background-image: url("../img/background.png");
 	background-size: cover;
 	background-position: center;
-	height: 350px;
-	margin-bottom: 48px;
+  background-attachment: fixed;
+	height: 75vh;
+  color: white;
+}
+
+header h1 {
+  margin-top: 100px;
+}
+
+header h1{
+  font-size: 75px;
+  letter-spacing: 35px;
+  text-transform: uppercase;
 }
 
 nav {
@@ -59,19 +70,24 @@ ul a {
 body {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
-	text-transform: uppercase;
+	text-transform: none;
 	letter-spacing: .02em;
 	text-align: center;
 	color: #44545E;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 section {
 	padding: 0 30px 54.4px 30px;
-	width: 70%;
+	margin: 0px;
 	text-align: left;
 }
 
+aside, #about {
+  padding: 0 30px 54.4px 30px;
+	width: 70%;
+	text-align: left;
+}
 
 .wrap {
 	max-width: 1000px;
@@ -103,11 +119,22 @@ aside img {
 
 
 #testimonials {
-	max-width: 800px;
 	font-size: 17.6px;
 	line-height: 1.1;
   background-color: #45AEB1;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#gallery {
+	width: 100%;
+  //padding-bottom: 0px;
+  background-color: #45AEB1;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -150,4 +177,34 @@ footer .wrap {
 	margin-bottom: 30px;
 	display: inline-block;
 	color: #45AEB1;
+}
+
+/*Gallery slider*/
+
+.carousel-wrapper {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+}
+
+.slides {
+	transition: all .3s ease-in-out;
+	display: flex;
+	width: 400%;
+}
+
+img .slides {
+	align-self: center;
+}
+
+button {
+	background-color: #3C4A53;
+	border: none;
+	font-size: .9rem;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 8px 15px;
+	margin: 0 10px;
 }
