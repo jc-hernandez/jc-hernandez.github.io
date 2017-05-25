@@ -182,7 +182,7 @@ footer .wrap {
 /*Gallery slider*/
 
 .carousel-wrapper {
-	width: 100%;
+	width: auto;
 	max-width: 1000px;
 	margin: 0 auto 30px;
 	overflow: hidden;
